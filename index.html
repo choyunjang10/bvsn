@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>ONE PIECE × NARUTO : CROSS BATTLE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-s="title">
+<div id="app">
+  <canvas id="cv" width="960" height="540"></canvas>
+
+  <section id="title" class="scr on">
+    <h1>ONE PIECE<br>× NARUTO</h1>
+    <h2>CROSS BATTLE</h2>
+    <button id="start">START GAME</button>
+    <p>PC: A/D 이동 · W 점프 · S 방어 · J 약 · K 강 · L 특수 · SPACE 필살기<br>모바일: 가로 화면 + 가상 버튼</p>
+  </section>
+
+  <section id="sel" class="scr">
+    <div id="rows"></div>
+    <div id="info"></div>
+    <div id="bar">
+      <span>난이도</span>
+      <button class="df" data-d="0">EASY</button>
+      <button class="df on" data-d="1">NORMAL</button>
+      <button class="df" data-d="2">HARD</button>
+      <button id="go">FIGHT!</button>
+      <button id="back">BACK</button>
+    </div>
+  </section>
+
+  <section id="end" class="scr">
+    <h2 id="msg"></h2>
+    <button id="again">REMATCH</button>
+    <button id="resel">캐릭터 재선택</button>
+  </section>
+
+  <div id="pad">
+    <div id="dp" class="g">
+      <span></span><button data-k="jump">↑</button><button data-k="guard">🛡</button>
+      <button data-k="left">←</button><span></span><button data-k="right">→</button>
+    </div>
+    <div id="ac" class="g">
+      <button data-k="c">C</button><button data-k="ult" class="u">ULT</button>
+      <button data-k="a">A</button><button data-k="b">B</button>
+    </div>
+  </div>
+
+  <div id="rot">📱 화면을 가로로 돌려주세요<br>(Rotate to landscape)</div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
